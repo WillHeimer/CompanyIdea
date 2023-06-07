@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #f4f8fb;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+#home-container {
+  background-image: url("https://i.imgur.com/Butgimi.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  max-width: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white; /* Change this to fit your website's color scheme */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0px;
+}
+
+#logo {
+  height: 70px; /* Adjust as needed */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+nav {
+  display: flex;
+  margin-left: 650px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #b2192a;
+}
+
+.cta-button {
+  background: #f9ad33;
+  color: #f4f8fb;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.cta-button:hover {
+  background: #b2192a;
+}
+
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+section a {
+  color: #f9ad33;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #b2192a;
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 5vh;
+  width: 450px;
+  height: 450px;
+  margin-left: 45vh;
+  border-radius: 10px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.portfolio-item:nth-child(1) img {
+  animation: fadeIn 1.8s ease-in-out 0.3s forwards;
+}
+
+.portfolio-item:nth-child(2) img {
+  animation: fadeIn 1.8s ease-in-out 0.6s forwards;
+}
+
+.portfolio-item:nth-child(3) img {
+  animation: fadeIn 1.8s ease-in-out 0.9s forwards;
+}
+
+.portfolio-item:nth-child(4) img {
+  animation: fadeIn 1.8s ease-in-out 1.2s forwards;
+}
+
+.portfolio-item:nth-child(5) img {
+  animation: fadeIn 1.8s ease-in-out 1.5s forwards;
+}
+
+.portfolio-item:nth-child(6) img {
+  animation: fadeIn 1.8s ease-in-out 1.8s forwards;
+}
+
+#portfolio-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  justify-content: center;
+}
+
+input[type="submit"] {
+  background-color: #f9ad33;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 2vh;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #b2192a;
+}
